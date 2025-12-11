@@ -1,0 +1,9 @@
+namespace Tree;
+
+table Node {
+    id: int;
+    value: int;
+    children: [Node];
+}
+
+root_type Node;

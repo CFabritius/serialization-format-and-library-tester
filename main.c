@@ -143,7 +143,7 @@ int main() {
 
         case LIB_JANSSON:
             json_t *jansson_tree = jansson_serialize_node(root);
-            json_dump_file(jansson_tree, library_output_filename(), JSON_COMPACT);
+            json_dump_file(jansson_tree, library_output_filename(), JSON_COMPACT/*JSON_INDENT(4)*/);
             break;
 
         case LIB_PARSON:
